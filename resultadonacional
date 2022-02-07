@@ -56,7 +56,7 @@ foreach ($json["data"] as $resultado) {
 	}
 }
 
-$sql2 = "SELECT * FROM sorteio";
+$sql2 = "SELECT * FROM sorteio"; //Cuidado é o nome da tabela nao do banco de dados
 $teste = mysqli_query($conn, $sql2) or die("Bad Query: $sql2");
 
 echo"<table border='1'>";
