@@ -59,7 +59,7 @@ foreach ($json["data"] as $resultado) {
 $sql2 = "SELECT * FROM sorteio";
 $teste = mysqli_query($conn, $sql2) or die("Bad Query: $sql2");
 
-echo"<table border='1'>";
+echo"<table border='2'>";
 echo"<tr><td>Resultado</td><td>Data e Hora</td><td>Tipo de Resultado</td><td>ID Concurso</td><td>Nome Loteria</td><td>Apelido</td><td>ID Loteria</td></tr>";
 while($row = mysqli_fetch_assoc($teste)){
 	echo"<tr><td>{$row['Resultado']}</td><td>{$row['DataHora']}</td><td>{$row['TipoResultado']}</td><td>{$row['IdConcurso']}</td><td>{$row['NoLoteria']}</td><td>{$row['NoApelido']}</td><td>{$row['IdLoteria']}</td></tr>";
